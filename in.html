@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="in.css">
+    <title>El Paisano - Comida Casera en Santa Rosa de Calamuchita</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <div class="container header-flex">
+            <img src="logo.png" alt="Logo El Paisano" class="logo">
+            <nav class="navigation">
+                <ul class="nav-list" id="navList">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#reservas">Reservas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Sección Principal -->
+    <section id="inicio" class="main-section fondo ">
+        <div class="container fondoTexto">
+            <h1>Bienvenidos a El Paisano</h1>
+            <p>Disfruta de la mejor comida casera en Santa Rosa de Calamuchita.</p>
+        </div>
+    </section>
+    
+    <!-- Sección de Menú -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2>Nuestro Menú</h2>
+            <div class="grid-menu">
+                <!-- Aquí van los platillos -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección de Reservas -->
+    <section id="reservas" class="reservas-section">
+        <div class="container">
+            <h2>Realiza una Reserva</h2>
+            <section id="reservas" class="reservas-section">
+                <div class="container">
+                    <h2>Realiza una Reserva</h2>
+                    <form id="formReserva">
+                        <input type="text" id="nombre" placeholder="Nombre" required>
+                        <input type="number" id="cantidadPersonas" placeholder="Cantidad de personas" required>
+                        <input type="datetime-local" id="fecha" required>
+                        <button type="submit">Reservar</button>
+                    </form>
+                </div>
+            </section>
+                    </div>
+    </section>
+    
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contacto-section">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form action="https://formspree.io/f/xexample" method="POST" id="formContacto">
+                <input type="email" name="_replyto" id="email" placeholder="Tu correo" required>
+                <textarea name="mensaje" id="mensaje" placeholder="Tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+    
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2023 El Paisano. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="in.js"></script>
+</body>
+
+</body>
+</html>

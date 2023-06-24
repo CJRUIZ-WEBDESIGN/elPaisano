@@ -1,0 +1,162 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado */
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+}
+
+.navigation li {
+    margin-right: 20px;
+}
+
+/* Sección Principal */
+.main-section {
+    background: url('imagen-de-fondo.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Sección de Menú */
+.grid-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Pie de página */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Media queries para responsividad */
+@media screen and (max-width: 768px) {
+    .header-flex {
+        flex-direction: column;
+    }
+}
+
+/* Estilos para la lista de navegación */
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+}
+
+.nav-list li {
+    display: inline;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.nav-list a:hover {
+    background-color: #111;
+}
+
+/* Estilos para la sección de menú */
+.grid-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.platillo {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.platillo h3 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+/* Estilos para la sección de reservas */
+.reservas-section {
+    background-color: #f9f9f9;
+    padding: 40px;
+}
+
+#formReserva input,
+#formReserva button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#formReserva button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Estilos para la sección de contacto */
+.contacto-section {
+    padding: 40px;
+    background-color: #f2f2f2;
+}
+
+#formContacto input,
+#formContacto textarea,
+#formContacto button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#formContacto button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.fondoTexto {
+    color: white;
+
+  }
+.fondo {
+    background-color: rgba(0,0,0,0.4);
+    background-image:url(/images/1.jpg);
+    height: 500px;
+    max-width: 100%;
+    filter:brightness(0.4);
+  }
