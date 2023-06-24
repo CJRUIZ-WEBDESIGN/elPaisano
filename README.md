@@ -12,8 +12,8 @@ JavaScript
 
 La pagina sera conformada por: 
 
-# Inicio
-# Menu
-# Contacto
+#-Inicio
+#-Menu
+#-Contacto
 
 
