@@ -1,162 +1,400 @@
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Contenedor */
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Encabezado */
 .header-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  flex-direction: column;
 }
 
-.logo {
-    width: 150px;
+h1 {
+  padding: 2em;
+  text-align: center;
 }
 
-.navigation ul {
-    display: flex;
-    list-style: none;
+h2 {
+  padding: 1em;
+  text-align: center;
 }
 
-.navigation li {
-    margin-right: 20px;
+h3 {
+  padding: 0.75em;
+  text-align: center;
+  font-weight: bold;
 }
 
-/* Sección Principal */
-.main-section {
-    background: url('imagen-de-fondo.jpg') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+p {
+  padding: 0.25em;
+  text-align: center;
 }
 
-/* Sección de Menú */
-.grid-menu {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-/* Pie de página */
-.footer {
-    padding: 20px;
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-}
-
-/* Media queries para responsividad */
-@media screen and (max-width: 768px) {
-    .header-flex {
-        flex-direction: column;
-    }
-}
-
-/* Estilos para la lista de navegación */
 .nav-list {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    background-color: #333;
-    padding: 10px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: #9e9696;
+  padding: 10px;
+  position: sticky;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.591);
+  background-repeat: no-repeat;
+}
+
+.ffondo {
+  background-color: rgba(0, 0, 0, 0.591);
+  width: 100%;
+  height: 80px;
 }
 
 .nav-list li {
-    display: inline;
+  display: inline;
+  font-size: 1.2em;
 }
 
 .nav-list a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 15px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px;
 }
 
 .nav-list a:hover {
-    background-color: #111;
+  background-color: #ffffff;
+  color: rgb(11, 7, 245);
 }
 
-/* Estilos para la sección de menú */
 .grid-menu {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 40px;
 }
 
-.platillo {
-    border: 1px solid #ddd;
-    padding: 20px;
-    text-align: center;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 10px;
+  width: 100%;
 }
 
-.platillo h3 {
-    margin: 0;
-    padding-bottom: 10px;
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2px;
+  object-fit: cover;
 }
 
-/* Estilos para la sección de reservas */
-.reservas-section {
-    background-color: #f9f9f9;
-    padding: 40px;
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#formReserva input,
-#formReserva button {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+.grid-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
-#formReserva button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    text-transform: uppercase;
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
 }
 
-/* Estilos para la sección de contacto */
-.contacto-section {
-    padding: 40px;
-    background-color: #f2f2f2;
+.imgLogo {
+  width: 380px;
+  height: auto;
+  padding: 10px;
+  margin-top: 2em;
+  border: rgba(0, 0, 0, 0.191) dotted 0.1px;
+  background-color: rgba(0, 0, 0, 0.09);
+  border-radius: 5%;
 }
 
-#formContacto input,
-#formContacto textarea,
-#formContacto button {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+.rsocial {
+  position: absolute;
+  display: flex;
 }
 
-#formContacto button {
-    background-color: #008CBA;
-    border: none;
-    color: white;
-    text-transform: uppercase;
+.rsocial__logos {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  padding: 30px;
 }
 
-.fondoTexto {
-    color: white;
+.carousel-inner .carousel-item {
+  height: 100vh;
+  position: relative;
+}
 
+.carousel-inner .carousel-item img {
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(0.8);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+.overlay h1 {
+  font-size: 2.5em;
+}
+
+.card {
+  width: 100%;
+}
+
+.card img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.imgg {
+  width: 50px;
+  height: 33%;
+}
+
+.bg-transparent {
+  filter: grayscale(0.9);
+}
+
+/********************
+MEDIA QUERY 768
+*********************/
+
+@media screen and (min-width: 768px) {
+  .header-flex {
+    flex-direction: column;
   }
-.fondo {
-    filter:brightness(0.7);
-    background-image:url(../images/asado.jpg);
-    background-color: rgba(0, 0, 0, 0.2);
-    height: 500px;
-    max-width: 100%;
+}
+
+h1 {
+  padding: 2em;
+  text-align: center;
+}
+
+h2 {
+  padding: 1em;
+  text-align: center;
+}
+
+h3 {
+  padding: 0.75em;
+  text-align: center;
+  font-weight: bold;
+}
+
+p {
+  padding: 0.25em;
+  text-align: center;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: #9e9696;
+  padding: 10px;
+  position: sticky;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.591);
+  background-repeat: no-repeat;
+}
+
+.ffondo {
+  background-color: rgba(0, 0, 0, 0.591);
+  width: 100%;
+  height: 80px;
+}
+
+.nav-list li {
+  display: inline;
+  font-size: 1.2em;
+}
+
+.nav-list a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.nav-list a:hover {
+  background-color: #ffffff;
+  color: rgb(11, 7, 245);
+}
+
+.grid-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 10px;
+  width: 100%;
+}
+
+.img {
+  background-image: url(/images/);
+}
+
+.bg-transparent {
+  filter: grayscale(0.9);
+}
+
+.imgLogo {
+  width: 180px;
+  display: flex;
+  width: 20px;
+}
+
+.rsocial {
+  position: absolute;
+  display: flex;
+}
+
+.rsocial__logos {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  padding: 30px;
+}
+
+.carousel-inner .carousel-item {
+  height: 100vh;
+  position: relative;
+}
+
+.carousel-inner .carousel-item img {
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(0.8);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+.overlay h1 {
+  font-size: 2.5em;
+}
+
+.card {
+  width: 100%;
+}
+
+.card img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.imgg {
+  width: 50px;
+  height: 33%;
+}
+
+.bg-transparent {
+  filter: grayscale(0.9);
+}
+
+/********************
+MEDIA QUERY 1024
+*********************/
+@media screen and (min-width: 1024px) {
+  .img {
+    background-image: url();
   }
+
+  .bg-transparent {
+    filter: grayscale(0.9);
+  }
+
+  .imgLogo {
+    width: 190px;
+    height: auto;
+    padding: 10px;
+    margin-top: 2em;
+    border: rgba(0, 0, 0) dotted 0.8px;
+  }
+
+  .rsocial {
+    position: absolute;
+    display: flex;
+  }
+
+  .rsocial__logos {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    padding: 30px;
+  }
+
+  .carousel-inner .carousel-item {
+    height: 100vh;
+    position: relative;
+  }
+
+  .carousel-inner .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(0.8);
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+  }
+
+  .overlay h1 {
+    font-size: 2.5em;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card img {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .imgg {
+    width: 50px;
+    height: 33%;
+  }
+
+  .bg-transparent {
+    filter: grayscale(0.9);
+  }
+}

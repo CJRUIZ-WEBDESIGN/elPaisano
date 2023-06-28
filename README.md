@@ -12,8 +12,15 @@ JavaScript
 
 La pagina sera conformada por: 
 
-#-Inicio
-#-Menu
-#-Contacto
+#-Inicio (return)
+
+#-Menu (En desarrollo)
+* Se agrego un array con productos, se insertan al html mediante DOM con el uso de Template Literals. 
+
+#-Galeria de Imagenes 
+(En Construccion)
+
+#-Contacto 
+( En Construccion )
 
 
