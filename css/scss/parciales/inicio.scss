@@ -1,0 +1,78 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2px;
+    object-fit: cover;
+  }
+  
+  .rsocial {
+    position: absolute;
+    display: flex;
+  }
+  
+  .rsocial__logos {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    padding: 30px;
+  }
+  
+  .carousel-inner .carousel-item {
+    height: 100vh;
+    position: relative;
+  }
+  
+  .carousel-inner .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(0.8);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: 11;
+  }
+  
+  .overlay h1 {
+    font-size: 2.5em;
+  }
+  
+  .card {
+    width: 100%;
+  }
+  
+  .card img {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .imgg {
+    width: 50px;
+    height: 33%;
+  }
+  
+  .bg-transparent {
+    filter: grayscale(0.9);
+  }
+  
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .imgLogo {
+    width: 190px;
+    height: auto;
+    padding: 10px;
+    margin-top: 2em;
+    border: rgba(0, 0, 0) dotted 0.8px;
+  }
